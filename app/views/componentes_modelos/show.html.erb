@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Modelo:</b>
+  <%= @componente_modelo.modelo_id %>
+</p>
+
+<p>
+  <b>Componente:</b>
+  <%= @componente_modelo.componente_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_componente_modelo_path(@componente_modelo) %> |
+<%= link_to 'Back', componentes_modelos_path %>

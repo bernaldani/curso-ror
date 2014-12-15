@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  codigo: MyString
+  serie_id: 1
+  sistema_operativo_id: 1
+  nombre: MyString
+  fecha_lanzamiento: 2013-06-07
+
+two:
+  codigo: MyString
+  serie_id: 1
+  sistema_operativo_id: 1
+  nombre: MyString
+  fecha_lanzamiento: 2013-06-07

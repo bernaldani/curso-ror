@@ -1,0 +1,25 @@
+<%= form_for(componente_modelo) do |f| %>
+  <% if componente_modelo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(componente_modelo.errors.count, "error") %> prohibited this componente_modelo from being saved:</h2>
+
+      <ul>
+      <% componente_modelo.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :modelo_id %><br />
+    <%= f.collection_select :modelo_id, Modelo.all, :id, :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :componente_id %><br />
+    <%= f.collection_select :componente_id, Modelo.all, :id, :descripcion %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

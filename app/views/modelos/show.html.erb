@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Codigo:</b>
+  <%= @modelo.codigo %>
+</p>
+
+<p>
+  <b>Serie:</b>
+  <%= @modelo.serie_id %>
+</p>
+
+<p>
+  <b>Sistema operativo:</b>
+  <%= @modelo.sistema_operativo_id %>
+</p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @modelo.nombre %>
+</p>
+
+<p>
+  <b>Fecha lanzamiento:</b>
+  <%= @modelo.fecha_lanzamiento %>
+</p>
+
+
+<%= link_to 'Edit', edit_modelo_path(@modelo) %> |
+<%= link_to 'Back', modelos_path %>

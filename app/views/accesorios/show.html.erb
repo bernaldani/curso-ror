@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Modelo:</b>
+  <%= @accesorio.modelo_id %>
+</p>
+
+<p>
+  <b>Descripcion:</b>
+  <%= @accesorio.descripcion %>
+</p>
+
+
+<%= link_to 'Edit', edit_accesorio_path(@accesorio) %> |
+<%= link_to 'Back', accesorios_path %>

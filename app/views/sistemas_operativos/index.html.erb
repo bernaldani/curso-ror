@@ -1,0 +1,23 @@
+<h1>Listing sistemas_operativos</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @sistemas_operativos.each do |sistema_operativo| %>
+  <tr>
+    <td><%= sistema_operativo.nombre %></td>
+    <td><%= link_to 'Show', sistema_operativo %></td>
+    <td><%= link_to 'Edit', edit_sistema_operativo_path(sistema_operativo) %></td>
+    <td><%= link_to 'Destroy', sistema_operativo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Sistema operativo', new_sistema_operativo_path %>

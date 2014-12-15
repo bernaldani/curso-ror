@@ -1,0 +1,25 @@
+<h1>Listing capacidades</h1>
+
+<table>
+  <tr>
+    <th>Numero</th>
+    <th>Descripcion</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @capacidades.each do |capacidad| %>
+  <tr>
+    <td><%= capacidad.numero %></td>
+    <td><%= capacidad.descripcion %></td>
+    <td><%= link_to 'Show', capacidad %></td>
+    <td><%= link_to 'Edit', edit_capacidad_path(capacidad) %></td>
+    <td><%= link_to 'Destroy', capacidad, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Capacidad', new_capacidad_path %>
